@@ -1,3 +1,4 @@
+from tkinter import messagebox
 import os
 import shutil
 import customtkinter
@@ -15,16 +16,18 @@ def open_help_center():
 
 #Phần code để dọn dẹp file
 def cleaning():
-    extensions = json.loads(open("extension.json", "r").read())
-    directory = os.path.join("need_to_clean")
-    for i in os.listdir(os.path.join("need_to_clean")):
-        for j in extensions:
-            if i.endswith(j):
-                check_folder_exist(os.path.join("need_to_clean"), extensions[j])
-                last_dir = directory + "\\" + i
-                move_dir = directory + "\\" + extensions[j]
-                move_file(last_dir,move_dir)
-
+    if os.path.exists("need_to_clean"):
+        extensions = json.loads(open("extension.json", "r").read())
+        directory = os.path.join("need_to_clean")
+        for i in os.listdir(os.path.join("need_to_clean")):
+            for j in extensions:
+                if i.endswith(j):
+                    check_folder_exist(os.path.join("need_to_clean"), extensions[j])
+                    last_dir = directory + "\\" + i
+                    move_dir = directory + "\\" + extensions[j]
+                    move_file(last_dir,move_dir)
+    else:
+        messagebox.showerror(title="Lỗi", message='Chưa tạo folder với tên "need_to_clean" bên cạnh phần mềm !')
 
 #Hàm của phần mềm
 def create_folder(dir):
