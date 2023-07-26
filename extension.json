@@ -23,19 +23,21 @@
     ".exe": "Executable File",
     ".apk": "Android Package File",
     ".iso": "Disk Image File",
-    ".csv": "Comma-Separated Values File (used for data storage)",
-    ".xml": "Extensible Markup Language File (used for data storage and exchange)",
-    ".json": "JavaScript Object Notation File (used for data storage and exchange)",
-    ".html": "Hypertext Markup Language File (used for web pages)",
-    ".htm": "Hypertext Markup Language File (used for web pages)",
-    ".css": "Cascading Style Sheet File (used for website styling)",
-    ".js": "JavaScript File (used for client-side scripting)",
+    ".csv": "Comma-Separated Values File",
+    ".xml": "Extensible Markup Language File",
+    ".json": "JavaScript Object Notation File",
+    ".html": "Hypertext Markup Language File",
+    ".htm": "Hypertext Markup Language File",
+    ".css": "Cascading Style Sheet File",
+    ".js": "JavaScript File",
     ".py": "Python Script File",
     ".cpp": "C/C++ Source Code File",
     ".c": "C/C++ Source Code File",
     ".java": "Java Source Code File",
-    ".php": "PHP Script File (used for web development)",
-    ".asp": "Active Server Page File (used for web development)",
-    ".aspx": "Active Server Page File (used for web development)"
-  }
-  
+    ".php": "PHP Script File",
+    ".asp": "Active Server Page File",
+    ".aspx": "Active Server Page File",
+    ".osz": "osu Beatmap",
+    ".ogg": "Ogg Vorbis Compressed Audio File",
+    ".m4a": "M4A Audio Files"
+}
