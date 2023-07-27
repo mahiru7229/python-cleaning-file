@@ -76,7 +76,7 @@ def cleaning():
                     last_dir = directory + "\\" + i
                     move_dir = directory + "\\" + extensions[j]
                     move_file(last_dir,move_dir)
-        messagebox.showinfo(title="Hoàn thành", message="Đã dọn dẹp tất cả các file trong thư mục vào các thư mục riêng biệt !")
+        messagebox.showinfo(title="Hoàn thành", message="Đã sắp xếp tất cả các file trong thư mục vào các thư mục riêng biệt !")
     else:
         os.mkdir("need_to_clean")
         messagebox.showerror(title="Lỗi", message='Folder với tên "need_to_clean" không tồn tại !\nPhần mềm sẽ tự tạo lại folder!')
@@ -100,7 +100,7 @@ customtkinter.set_appearance_mode("dark")
 
 windows = customtkinter.CTk()
 
-label_1 = customtkinter.CTkLabel(windows, text= "Mệt mỏi vì nhát dọn dẹp file ?, \nphần mềm này sẽ giúp những người lười như bạn XD", font=FONT)
+label_1 = customtkinter.CTkLabel(windows, text= "Mệt mỏi vì nhát sắp xếp file ?, \nphần mềm này sẽ giúp những người lười như bạn XD", font=FONT)
 label_1.grid(row= 0, column = 0)
 
 label_2 = customtkinter.CTkLabel(windows, text= "Made by @mahiru7229", font=FONT)
@@ -109,7 +109,7 @@ label_2.grid(row= 1, column = 0)
 help_button = customtkinter.CTkButton(windows, text = "Hướng dẫn cách dùng\nphần mềm", font =FONT_BUTTON, command=open_help_center)
 help_button.grid(row= 0, column = 1,padx = 10, pady = 10)
 
-move_button = customtkinter.CTkButton(windows, text = "Dọn dẹp file", font =FONT_BUTTON,command=cleaning)
+move_button = customtkinter.CTkButton(windows, text = "Sắp xếp file", font =FONT_BUTTON,command=cleaning)
 move_button.grid(row= 1, column = 1,padx = 10, pady = 10)
 
 move_button = customtkinter.CTkButton(windows, text = "Report lỗi phần mềm", font =FONT_BUTTON,command=report)
