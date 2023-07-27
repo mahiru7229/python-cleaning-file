@@ -116,6 +116,6 @@ move_button = customtkinter.CTkButton(windows, text = "Report lỗi phần mềm
 move_button.grid(row= 2, column = 1,padx = 10, pady = 10)
 
 
-windows.title("File Cleaner 1.0 :D")
+windows.title("File Cleaner 1.0.1 :D")
 windows.resizable(width=False, height=False)
 windows.mainloop()
